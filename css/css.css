@@ -1,0 +1,52 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body 
+{
+	color: #333;
+	font-family: font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+/****************************
+*		Header
+* ***************************/
+header
+{
+	background: #000;
+	border-bottom: 2px solid #b2b2b2;
+	height: 100%;
+	margin: 0 auto;
+	max-width: 100%;
+}
+#header-img
+{
+	display: inline-block;
+	margin-left: 20px;
+	width: 20%
+}
+#header-img img
+{
+	max-width: 100%
+}
+#headerTexto
+{
+	display: inline-block;
+	margin: 0 auto;
+	width: 70%
+}
+#headerTexto h1
+{
+	font-size: 45px;
+	color: #fff;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+#headerTexto h2
+{
+	color: #fff;
+	padding-left: 60px;
+}
