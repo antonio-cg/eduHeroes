@@ -40,7 +40,7 @@ header
 }
 #headerTexto h1
 {
-	font-size: 50px;
+	font-size: 45px;
 	color: #fff;
 	margin: 0 auto;
 	padding-bottom: 10px;
@@ -48,34 +48,5 @@ header
 #headerTexto h2
 {
 	color: #fff;
-	font-size: 25px;
 	padding-left: 60px;
-	padding-bottom: 10px;
 }
-/****************************
-*			nav
-* ***************************/
-nav
-{
-	background: #fff;
-	border-bottom: 2px solid #b2b2b2;
-	height: 40px;
-	margin: 0 auto;
-}
-nav ul
-{
-	padding-top: 8px;
-}
-nav li
-{
-	display: inline-block;
-	margin-left: 150px;
-}
-nav a
-{
-	text-decoration: none;
-	font-size: 20px;
-}
-
-
-
