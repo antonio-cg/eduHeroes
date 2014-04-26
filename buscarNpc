@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Vistas</title>
+	<title>Buscar Npc</title>
 	<meta name="viewport" content="width=device-width, maximum-scale=1">
-	<link rel="stylesheet" href="css/css.css">
+	<link rel="stylesheet" href="css/buscarNpc.css">
 	<link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
@@ -27,7 +27,16 @@
 		</ul>
 	</nav>
 	<section id="dos-columnas">
-		<h2></h2>
+		<div id="buscarNpc">
+			<div id="busqueda">
+				<img src="">
+				<input type="text" name="buscar" id="Buscar" placeholder="Npc a buscar"/>
+			</div>
+			<div id="resultado">
+
+			</div>
+			<a href="mod_Npc.html">Modificar</a>
+		</div>
 	</section>
 	<footer>
 		<div id="fotterContenedor">
