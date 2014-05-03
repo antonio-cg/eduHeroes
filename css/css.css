@@ -5,6 +5,7 @@
 }
 body 
 {
+	background: #d8dee0;
 	color: #333;
 	font-family: font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
@@ -16,7 +17,7 @@ body
 * ***************************/
 header
 {
-	background: #000;
+	background: #4F8AFF;
 	border-bottom: 2px solid #b2b2b2;
 	height: 100%;
 	margin: 0 auto;
@@ -41,13 +42,13 @@ header
 #headerTexto h1
 {
 	font-size: 50px;
-	color: #fff;
+	color: #FF472E;
 	margin: 0 auto;
 	padding-bottom: 10px;
 }
 #headerTexto h2
 {
-	color: #fff;
+	color: #FF472E;
 	font-size: 25px;
 	padding-left: 60px;
 	padding-bottom: 10px;
@@ -57,7 +58,7 @@ header
 * ***************************/
 nav
 {
-	background: #fff;
+	background: #d8dee0;
 	border-bottom: 2px solid #b2b2b2;
 	height: 40px;
 	margin: 0 auto;
