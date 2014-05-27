@@ -1,1 +1,55 @@
 extends ../layout.jade
+block content
+   #Content
+        
+        #buscarDatos
+            h3 Buscar item
+            ul
+                li 
+                    a(href='#') Buscar por id
+                li 
+                    a(href='#') Buscar por nombre 
+            #buscarId
+                form(method='post')
+                    .separador
+                        label(for='idItem') Id:
+                        input(type='text' name='idItem' placeholder='Ingresa id' tabindex=1)
+            #buscarNombre
+                form(method='post')
+                    .separador
+                        label(for='idItem') Nombre:
+                        input(type='text' name='idItem' placeholder='Ingresa nombre' tabindex=1)
+        
+        #modificarDatos
+            h3 modificar datos
+            form(method='post')
+                .separador
+                    label(for='idItem') Id: 
+                    input(type='text' name='idItem' placeholder='#{id}' tabindex=1)
+                .separador
+                    label(for='nombreItem') Nombre:
+                    input(type='text' name='nombreItem' placeholder='#{nombre}' tabindex=2)    
+                .separador
+                    label(for='rarezaItem') rareza:
+                    input(type='text' name='rarezaItem' placeholder='#{rareza}' tabindex=3)    
+                .separador
+                    label(for='sanacionItem') Sanacion:
+                    input(type='text' name='sanacionItem' placeholder='#{sanacion}' tabindex=4)    
+                .separador
+                    label(for='valorItem') Valor:
+                    input(type='text' name='valorItem' placeholder='#{valor}' tabindex=5)    
+                .separador
+                    label(for='danoItem') Daño:
+                    input(type='text' name='danoItem' placeholder='#{dano}' tabindex=6)    
+                .separador
+                    label(for='tipoItem') Tipo:
+                    input(type='text' name='tipoItem' placeholder='#{tipo}' tabindex=7)    
+                .separador
+                    label(for='maxItem') Maximo:
+                    input(type='text' name='maxItem' placeholder='#{max}' tabindex=8)    
+                .separador
+                    label(for='descItem') Descripcion:
+                    input(type='text' name='descItem' placeholder='#{desc}' tabindex=9)    
+                .separador
+                    input(type='button' name='guardar' text='hola') 
+                    input(type='button' name='cancelar') 
