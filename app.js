@@ -2,14 +2,13 @@
 /**
  * Module dependencies.
  */
-
-var express = require('express');
+ var express = require('express');
+var io      = require('./lib/socket.js');
 var routes = require('./routes');
 var user = require('./routes/user');
-var http = require('http');
 var path = require('path');
-
-var app = express();
+var app = new express();
+var http = require('http');
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -56,6 +55,9 @@ app.get('/admin/item/borrar',routes.itemBorrar);
 app.get('/admin/item/buscar',routes.itemBuscar);
 app.get('/users', user.list);
 
-http.createServer(app).listen(app.get('port'), function(){
+var httpServer = http.createServer(app).listen(app.get('port'), function(){
   console.log('Iniciando el servidor en el puerto: ' + app.get('port'));
+
 });
+
+  io.start(httpServer);

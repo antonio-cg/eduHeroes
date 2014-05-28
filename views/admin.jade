@@ -1,9 +1,53 @@
-extends layout
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/template.min.css')
+  header
+     
+    .navbar.navbar-default
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='/') Admin EduHeroes 
+      .navbar-collapse.collapse.navbar-responsive-collapse
+        ul.nav.navbar-nav
+          li
+            a(href='/admin') Inicio
+          li
+            a(href='/admin/npc') Npc
+          li
+            a(href='/admin/users') Usuarios
+          li
+            a(href='/admin/mundo') Mundo
+          li
+            a(href='/admin/item') Items
 
-block content
-  div.alert.alert-dismissable.alert-info 
-    button.close(type='button', data-dismiss='alert') ×
-    strong Ok! Entraste a administrar
-    | pero tengo algo que decirte
-    a.alert-link(href='#') no tengo nada que poner en el inicio, para eso estan los botones :D
-    | .
+        form.navbar-form.navbar-left
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href='javascript:history.back()') Atras
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown')
+              | Dropdown
+              b.caret
+            ul.dropdown-menu
+              li
+                a(href='#') Action
+              li
+                a(href='#') Another action
+              li
+                a(href='#') Something else here
+              li.divider
+              li
+                a(href='#') Separated link
+  body
+
+    div.alert.alert-dismissable.alert-info 
+      button.close(type='button', data-dismiss='alert') ×
+      strong Ok! Entraste a administrar
+      | pero tengo algo que decirte
+      a.alert-link(href='#') no tengo nada que poner en el inicio, para eso estan los botones :D
+      | .

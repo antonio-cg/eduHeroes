@@ -1,37 +1,18 @@
 extends ../layout.jade
 
 block content
-    #modificarDatos
-            h3 Guardar nuevo item
-            form(method='post')
-                .separador
-                    label(for='idItem') Id: 
-                    input(type='text' name='idItem' placeholder='#{id}' tabindex=1)
-                .separador
-                    label(for='nombreItem') Nombre:
-                    input(type='text' name='nombreItem' placeholder='#{nombre}' tabindex=2)    
-                .separador
-                    label(for='rarezaItem') rareza:
-                    input(type='text' name='rarezaItem' placeholder='#{rareza}' tabindex=3)    
-                .separador
-                    label(for='sanacionItem') Sanacion:
-                    input(type='text' name='sanacionItem' placeholder='#{sanacion}' tabindex=4)    
-                .separador
-                    label(for='valorItem') Valor:
-                    input(type='text' name='valorItem' placeholder='#{valor}' tabindex=5)    
-                .separador
-                    label(for='danoItem') Daño:
-                    input(type='text' name='danoItem' placeholder='#{dano}' tabindex=6)    
-                .separador
-                    label(for='tipoItem') Tipo:
-                    input(type='text' name='tipoItem' placeholder='#{tipo}' tabindex=7)    
-                .separador
-                    label(for='maxItem') Maximo:
-                    input(type='text' name='maxItem' placeholder='#{max}' tabindex=8)    
-                .separador
-                    label(for='descItem') Descripcion:
-                    input(type='text' name='descItem' placeholder='#{desc}' tabindex=9)    
-                .separador
-                    input(type='button' name='guardar' value='Guardar') 
-                    input(type='button' name='cancelar' value='Limpiar')
-                    input(type='button' name='cancelar' value='Cancelar')  
+	form.form-horizontal.col-lg-6
+		fieldset
+			legend Agregar nuevo item:
+			.form-group
+				label.col-lg-2.control-label(for='idItem') id: 
+				.col-lg-10
+					input#inputEmail.form-control(type='text' name='inputEmail' onkeypress='return numbersonly()')
+			.form-group
+				label.col-lg-2.control-label(for='inputPassword') Nombre item:
+				.col-lg-10
+					input#inputPassword.form-control(type='password', placeholder='Password')
+			.form-group
+				label.col-lg-2.control-label(for='inputPassword') Valor: 
+				.col-lg-10
+					input#inputPassword.form-control(type='password', placeholder='Password')
