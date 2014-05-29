@@ -1,0 +1,28 @@
+extends ../layout.jade
+
+block content
+    #modificarDatos
+            h3 Guardar nueva mision
+            form(method='post')
+                .separador
+                    label(for='idMision') Id: 
+                    input(type='text' name='idMision' placeholder='#{id}' tabindex=1)
+                .separador
+                    label(for='NombreMi') Nombre:
+                    input(type='text' name='nombreMi' placeholder='#{nombre}' tabindex=2)    
+                .separador
+                  label(for='inicioMi') Quien inicia la mision:
+                    input(type='text' name='inicioMi' placeholder='#{inicio}' tabindex=3)    
+                .separador
+                    label(for='terminaMi') Quien termina la mision:
+                    input(type='text' name='sanacionItem' placeholder='#{termina}' tabindex=4)    
+                .separador
+                    label(for='recompensaMi') Recompensa:
+                    input(type='text' name='recompensaMi' placeholder='#{recompensa}' tabindex=5)    
+                .separador
+                    label(for='cantidadMi') Cantidad de recompensa:
+                    input(type='text' name='cantidadMi' placeholder='#{Cantidad}' tabindex=6)    
+                .separador
+                    input(type='button' name='guardar' value='Guardar') 
+                    input(type='button' name='cancelar' value='Limpiar')
+                    input(type='button' name='cancelar' value='Cancelar')  
