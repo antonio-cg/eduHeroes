@@ -33,7 +33,7 @@ exports.misionBuscar = function(req,res){
 
 //Rutas NPC
 exports.npc = function(req,res){
-    res.render('npc',{});
+    res.render('npc',{title : '2'});
 }
 
 exports.npcNuevo = function(req,res){

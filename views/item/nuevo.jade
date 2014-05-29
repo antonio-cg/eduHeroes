@@ -5,14 +5,18 @@ block content
 		fieldset
 			legend Agregar nuevo item:
 			.form-group
-				label.col-lg-2.control-label(for='idItem') id: 
+				label.col-lg-2.control-label(for='idItem') Id: 
 				.col-lg-10
-					input#inputEmail.form-control(type='text' name='inputEmail' onkeypress='return numbersonly()')
+					input#disabledInput.form-control(type='text' name='inputEmail' onkeypress='return numbersonly()',disabled='')
 			.form-group
 				label.col-lg-2.control-label(for='inputPassword') Nombre item:
 				.col-lg-10
-					input#inputPassword.form-control(type='password', placeholder='Password')
+					input#inputPassword.form-control(type='text', placeholder='Password')
 			.form-group
-				label.col-lg-2.control-label(for='inputPassword') Valor: 
+				label.col-lg-2.control-label(for='valor') Valor: 
 				.col-lg-10
-					input#inputPassword.form-control(type='password', placeholder='Password')
+					input#inputPassword.form-control(type='text', placeholder='Password')
+			.form-group
+				label.col-lg-2.control-label(for='valor') Sanacion: 
+				.col-lg-10
+					input#inputPassword.form-control(type='text', placeholder='Ingresa lo que puede sanar')			
