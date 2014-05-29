@@ -3,7 +3,7 @@ block content
     #Content.col-lg-6.col-lg-offset-3.centered
         form.form-horizontal
             fieldset
-                legend Buscar Item:
+                legend Borrar Item:
                 .form-group.form-horizontal
                         .col-lg-10
                     .form-group
@@ -16,46 +16,4 @@ block content
                             input.form-control(type='text' name='idItem' placeholder='Ingresa nombre')
                     .form-group.col-lg-10.col-lg-offset-2
                         button.btn.btn-default(style='margin-right:5px') Cancelar
-                        button.btn.btn-primary(type='submit') Buscar
-    form.form-horizontal.form-control(style='display:none')
-            fieldset
-                legend Modificar datos:
-                .form-group
-                    label.col-lg-2.control-label(for='idItem') Id: 
-                    .col-lg-10
-                        input.form-control(type='text' name='idItem' disabled='' onkeypress='return numbersonly()')
-                .form-group
-                    label.col-lg-2.control-label(for='nombreItem') Nombre:
-                    .col-lg-10
-                        input.form-control(type='text' name='nombreItem' placeholder='Nombre del Item' tabindex=2)    
-                .form-group
-                    label.col-lg-2.control-label(for='rarezaItem') Rareza:
-                    .col-lg-10
-                        input.form-control(type='text' name='rarezaItem' placeholder='Rareza' tabindex=3)    
-                .form-group
-                    label.col-lg-2.control-label(for='sanacionItem') Sanacion:
-                    .col-lg-10
-                        input.form-control(type='text' name='sanacionItem' placeholder='Sanacion' tabindex=4)    
-                .form-group
-                    label.col-lg-2.control-label(for='valorItem') Valor:
-                    .col-lg-10
-                        input.form-control(type='text' name='valorItem' placeholder='Valor' tabindex=5)    
-                .form-group
-                    label.col-lg-2.control-label(for='danoItem') Daño:
-                    .col-lg-10
-                        input.form-control(type='text' name='danoItem' placeholder='Daño' tabindex=6)    
-                .form-group
-                    label.col-lg-2.control-label(for='tipoItem') Tipo:
-                    .col-lg-10
-                        input.form-control(type='text' name='tipoItem' placeholder='#{tipo}' tabindex=7)    
-                .form-group
-                    label.col-lg-2.control-label(for='maxItem') Maximo:
-                    .col-lg-10
-                        input.form-control(type='text' name='maxItem' placeholder='#{max}' tabindex=8)    
-                .form-group
-                    label.col-lg-2.control-label(for='descItem') Descripcion:
-                    .col-lg-10
-                        input.form-control(type='text' name='descItem' placeholder='#{desc}' tabindex=9) 
-                .form-group.col-lg-10.col-lg-offset-4
-                    button.btn.btn-default Cancelar
-                    button.btn.btn-primary(type="submit") Guardar
+                        button.btn.btn-primary(type='submit') Borrar
