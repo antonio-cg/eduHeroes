@@ -2,7 +2,7 @@
 /**
  * Module dependencies.
  */
- var express = require('express');
+var express = require('express');
 var io      = require('./lib/socket.js');
 var routes = require('./routes');
 var user = require('./routes/user');

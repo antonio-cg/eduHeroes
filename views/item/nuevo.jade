@@ -1,18 +1,22 @@
 extends ../layout.jade
-
 block content
-	form.form-horizontal.col-lg-6
-		fieldset
-			legend Agregar nuevo item:
-			.form-group
-				label.col-lg-2.control-label(for='idItem') id: 
-				.col-lg-10
-					input#inputEmail.form-control(type='text' name='inputEmail' onkeypress='return numbersonly()')
-			.form-group
-				label.col-lg-2.control-label(for='inputPassword') Nombre item:
-				.col-lg-10
-					input#inputPassword.form-control(type='password', placeholder='Password')
-			.form-group
-				label.col-lg-2.control-label(for='inputPassword') Valor: 
-				.col-lg-10
-					input#inputPassword.form-control(type='password', placeholder='Password')
+    script(src='https://code.jquery.com/jquery-1.10.2.min.js')
+    script
+       $('.bs-component [data-toggle="tooltip"]').tooltip();
+    form.form-horizontal.col-lg-6
+        fieldset
+            legend Agregar nuevo item:
+            .form-group
+                label.col-lg-2.control-label(for='idItem') id: 
+                .col-lg-10
+                    input#inputEmail.form-control(type='text' name='inputEmail' onkeypress='return numbersonly()')
+            .form-group
+                label.col-lg-2.control-label(for='inputPassword') Nombre item:
+                .col-lg-10
+                    input#inputPassword.form-control(type='password', placeholder='Password')
+            .form-group
+                label.col-lg-2.control-label(for='inputPassword') Valor: 
+                .col-lg-10
+                    input#inputPassword.form-control(type='password', placeholder='Password')
+                button.btn.btn-default(type='button', data-toggle='tooltip', data-placement='top', title='', data-original-title='Tooltip on top') Top
+  
