@@ -1,55 +1,60 @@
 extends ../layout.jade
 block content
    #Content
-        
-        #buscarDatos
-            h3 Buscar item
-            ul
-                li 
-                    a(href='#') Buscar por id
-                li 
-                    a(href='#') Buscar por nombre 
-            #buscarId
-                form(method='post')
-                    .separador
-                        label(for='idItem') Id:
-                        input(type='text' name='idItem' placeholder='Ingresa id' tabindex=1)
-            #buscarNombre
-                form(method='post')
-                    .separador
-                        label(for='idItem') Nombre:
-                        input(type='text' name='idItem' placeholder='Ingresa nombre' tabindex=1)
-        
-        #modificarDatos
-            h3 modificar datos
-            form(method='post')
-                .separador
-                    label(for='idItem') Id: 
-                    input(type='text' name='idItem' placeholder='#{id}' tabindex=1)
-                .separador
-                    label(for='nombreItem') Nombre:
-                    input(type='text' name='nombreItem' placeholder='#{nombre}' tabindex=2)    
-                .separador
-                    label(for='rarezaItem') rareza:
-                    input(type='text' name='rarezaItem' placeholder='#{rareza}' tabindex=3)    
-                .separador
-                    label(for='sanacionItem') Sanacion:
-                    input(type='text' name='sanacionItem' placeholder='#{sanacion}' tabindex=4)    
-                .separador
-                    label(for='valorItem') Valor:
-                    input(type='text' name='valorItem' placeholder='#{valor}' tabindex=5)    
-                .separador
-                    label(for='danoItem') Daño:
-                    input(type='text' name='danoItem' placeholder='#{dano}' tabindex=6)    
-                .separador
-                    label(for='tipoItem') Tipo:
-                    input(type='text' name='tipoItem' placeholder='#{tipo}' tabindex=7)    
-                .separador
-                    label(for='maxItem') Maximo:
-                    input(type='text' name='maxItem' placeholder='#{max}' tabindex=8)    
-                .separador
-                    label(for='descItem') Descripcion:
-                    input(type='text' name='descItem' placeholder='#{desc}' tabindex=9)    
-                .separador
-                    input(type='button' name='guardar' text='hola') 
-                    input(type='button' name='cancelar') 
+        form.form-horizontal.col-lg-6
+            fieldset
+                legend Buscar Item:
+                    .form-group.form-horizontal 
+                        .form-group
+                            label.col-lg-2.control-label(for='idItem') Buscar por Id:
+                            .col-lg-10
+                                input.form-control(type='text' name='idItem' placeholder='Ingresa id')
+                        .form-group       
+                            label.col-lg-2.control-label(for='idItem') Buscar por Nombre:
+                            .col-lg-10    
+                                input.form-control(type='text' name='idItem' placeholder='Ingresa nombre')
+                        .form-group
+                            button.btn.btn-default Cancelar
+                            button.btn.btn-primary(type='submit') Buscar
+        form.form-horizontal.form-control(style='display:none')
+            fieldset
+                legend Modificar datos:
+                .form-group
+                    label.col-lg-2.control-label(for='idItem') Id: 
+                    .col-lg-10
+                        input.form-control(type='text' name='idItem' disabled='' onkeypress='return numbersonly()')
+                .form-group
+                    label.col-lg-2.control-label(for='nombreItem') Nombre:
+                    .col-lg-10
+                        input.form-control(type='text' name='nombreItem' placeholder='Nombre del Item' tabindex=2)    
+                .form-group
+                    label.col-lg-2.control-label(for='rarezaItem') Rareza:
+                    .col-lg-10
+                        input.form-control(type='text' name='rarezaItem' placeholder='Rareza' tabindex=3)    
+                .form-group
+                    label.col-lg-2.control-label(for='sanacionItem') Sanacion:
+                    .col-lg-10
+                        input.form-control(type='text' name='sanacionItem' placeholder='Sanacion' tabindex=4)    
+                .form-group
+                    label.col-lg-2.control-label(for='valorItem') Valor:
+                    .col-lg-10
+                        input.form-control(type='text' name='valorItem' placeholder='Valor' tabindex=5)    
+                .form-group
+                    label.col-lg-2.control-label(for='danoItem') Daño:
+                    .col-lg-10
+                        input.form-control(type='text' name='danoItem' placeholder='Daño' tabindex=6)    
+                .form-group
+                    label.col-lg-2.control-label(for='tipoItem') Tipo:
+                    .col-lg-10
+                        input.form-control(type='text' name='tipoItem' placeholder='#{tipo}' tabindex=7)    
+                .form-group
+                    label.col-lg-2.control-label(for='maxItem') Maximo:
+                    .col-lg-10
+                        input.form-control(type='text' name='maxItem' placeholder='#{max}' tabindex=8)    
+                .form-group
+                    label.col-lg-2.control-label(for='descItem') Descripcion:
+                    .col-lg-10
+                        input.form-control(type='text' name='descItem' placeholder='#{desc}' tabindex=9) 
+                .form-group.col-lg-10.col-lg-offset-4
+                    button.btn.btn-default Cancelar
+                    button.btn.btn-primary(type="submit") Guardar
