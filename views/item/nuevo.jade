@@ -1,45 +1,46 @@
 extends ../layout.jade
 
 block content
-	form.form-horizontal.col-lg-10.form-control
-		fieldset
-			legend Agregar nuevo item:
-			.form-group
-				label.col-lg-2.control-label(for='idItem') Id: 
-				.col-lg-10
-					input.form-control(type='text' name='inputEmail' onkeypress='return numbersonly()' disabled='')
-			.form-group
-				label.col-lg-2.control-label(for='inputPassword') Nombre:
-				.col-lg-10
-					input.form-control(type='text', placeholder='Nombre del Item')
-			.form-group
-				label.col-lg-2.control-label(for='valor') Rareza: 
-				.col-lg-10
-					input.form-control(type='text', placeholder='Valor del item')
-			.form-group
-				label.col-lg-2.control-label(for='valor') Sanacion: 
-				.col-lg-10
-					input.form-control(type='text', placeholder='Ingresa el valor de sanación')
-			.form-group
-				label.col-lg-2.control-label(for='valorItem', placeholder='Valor del Item') Valor:
-				.col-lg-10
-					input.form-control(type='text', placeholder='Ingresa el valor del Item')
-			.form-group
-				label.col-lg-2.control-label(for='dañoItem', placeholder='Daño del Item') Daño:
-				.col-lg-10
-					input.form-control(type='text', placeholder='Ingresa el daño')
-			.form-group
-				label.col-lg-2.control-label(for='tipoItem', placeholder='Tipo del Item') Tipo:
-				.col-lg-10
-					input.form-control(type='text', placeholder='Ingresa el tipo')
-			.form-group
-				label.col-lg-2.control-label(for='maxItem', placeholder='Maximo del Item') Maximo:
-				.col-lg-10
-					input.form-control(type='text', placeholder='Ingresa el maximo')
-			.form-group
-				label.col-lg-2.control-label(for='descItem', placeholder='Descripcion del Item') Descripcion:
-				.col-lg-10
-					input.form-control(type='text', placeholder='Ingresa la descripcion')
-			.form-group.col-lg-10.col-lg-offset-2
-				button.btn.btn-default Cancelar
-				button.btn.btn-primary(type='submit') Guardar
+	#Content.col-lg-6.col-lg-offset-3.centered
+		form.form-horizontal
+			fieldset
+				legend Agregar nuevo item:
+				.form-group
+					label.col-lg-2.control-label(for='idItem') Id: 
+					.col-lg-10
+						input.form-control(type='text', name='inputEmail' onkeypress='return numbersonly()' disabled='')
+				.form-group
+					label.col-lg-2.control-label(for='inputPassword') Nombre:
+					.col-lg-10
+						input.form-control(type='text', name='inputNombre' placeholder='Nombre del Item')
+				.form-group
+					label.col-lg-2.control-label(for='valor') Rareza: 
+					.col-lg-10
+						input.form-control(type='text', name='inputValor' placeholder='Valor del item')
+				.form-group
+					label.col-lg-2.control-label(for='valor') Sanacion: 
+					.col-lg-10
+						input.form-control(type='text', name='inputSana' placeholder='Ingresa el valor de sanación')
+				.form-group
+					label.col-lg-2.control-label(for='valorItem', placeholder='Valor del Item') Valor:
+					.col-lg-10
+						input.form-control(type='text', name='inputValor' placeholder='Ingresa el valor del Item')
+				.form-group
+					label.col-lg-2.control-label(for='dañoItem', placeholder='Daño del Item') Daño:
+					.col-lg-10
+						input.form-control(type='text', name='inputDaño' placeholder='Ingresa el daño')
+				.form-group
+					label.col-lg-2.control-label(for='tipoItem' placeholder='Tipo del Item') Tipo:
+					.col-lg-10
+						input.form-control(type='text', name='inputTipo' placeholder='Ingresa el tipo')
+				.form-group
+					label.col-lg-2.control-label(for='maxItem', placeholder='Maximo del Item') Maximo:
+					.col-lg-10
+						input.form-control(type='text', name='inputMax' placeholder='Ingresa el maximo')
+				.form-group
+					label.col-lg-2.control-label(for='descItem', placeholder='Descripcion del Item') Descripcion:
+					.col-lg-10
+						input.form-control(type='text', name='inputDesc' placeholder='Ingresa la descripcion')
+				.form-group.col-lg-10.col-lg-offset-2
+					button.btn.btn-default(style='margin-right:5px') Cancelar
+					button.btn.btn-primary(type='submit') Guardar
