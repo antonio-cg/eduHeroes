@@ -2,7 +2,8 @@
 /**
  * Module dependencies.
  */
- var express = require('express');
+
+var express = require('express');
 var io      = require('./lib/socket.js');
 var routes = require('./routes');
 var user = require('./routes/user');
@@ -60,4 +61,4 @@ var httpServer = http.createServer(app).listen(app.get('port'), function(){
 
 });
 
-  io.start(httpServer);
+io.start(httpServer);
