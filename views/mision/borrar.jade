@@ -1,1 +1,19 @@
 extends ../layout.jade
+block content
+    #Content.col-lg-6.col-lg-offset-3.centered
+        form.form-horizontal
+            fieldset
+                legend Borrar Mision:
+                .form-group.form-horizontal
+                        .col-lg-10
+                    .form-group
+                        label.col-lg-2.control-label(for='idMision') Buscar por Id:
+                        .col-lg-10
+                            input.form-control(type='text' name='idMision' placeholder='Ingresa id' onkeypress='return numbersonly()')
+                    .form-group       
+                        label.col-lg-2.control-label(for='nombreMision') Buscar por Nombre:
+                        .col-lg-10    
+                            input.form-control(type='text' name='nombreMision' placeholder='Ingresa nombre')
+                    .form-group.col-lg-10.col-lg-offset-2
+                        button.btn.btn-default(style='margin-right:5px') Cancelar
+                        button.btn.btn-primary(type='submit') Borrar
