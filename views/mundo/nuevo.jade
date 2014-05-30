@@ -1,1 +1,28 @@
 extends ../layout.jade
+
+block content
+	#Content.col-lg-6.col-lg-offset-3.centered
+		form.form-horizontal
+			fieldset
+				legend Agregar Nuevo Mundo:
+				.form-group
+					label.col-lg-2.control-label(for='idIMundo') Id Mundo: 
+					.col-lg-10
+						input.form-control(type='text', name='inputId' onkeypress='return numbersonly()' disabled='')
+				.form-group
+					label.col-lg-2.control-label(for='inputNombre') Nombre Mundo:
+					.col-lg-10
+						input.form-control(type='text', name='inputNombre' placeholder='Nombre del mundo')
+				.form-group
+					label.col-lg-2.control-label(for='Nivel') Nivel: 
+					.col-lg-10
+						input.form-control(type='text', name='inputNivel' placeholder='Nivel')
+				.form-group
+					label.col-lg-2.control-label(for='Capacidad') Capacidad Maxima: 
+					.col-lg-10
+						input.form-control(type='text', name='inputCapacidad' placeholder='Capacidad Maxima')
+				
+						
+				.form-group.col-lg-10.col-lg-offset-2
+					button.btn.btn-default(style='margin-right:5px') Cancelar
+					button.btn.btn-primary(type='submit') Guardar
