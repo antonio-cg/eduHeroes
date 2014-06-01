@@ -3,59 +3,59 @@ block content
     #Content.col-lg-6.col-lg-offset-3.centered
         form.form-horizontal
             fieldset
-                legend Buscar Item:
+                legend Buscar Npc:
                 .form-group.form-horizontal
                         .col-lg-10
                     .form-group
-                        label.col-lg-2.control-label(for='idItem') Buscar por Id:
+                        label.col-lg-2.control-label(for='idNpc') Buscar por Id:
                         .col-lg-10
-                            input.form-control(type='text' name='idItem' placeholder='Ingresa id' onkeypress='return numbersonly()')
+                            input.form-control(type='text' name='idNpc' placeholder='Ingresa id' onkeypress='return numbersonly()')
                     .form-group       
-                        label.col-lg-2.control-label(for='idItem') Buscar por Nombre:
+                        label.col-lg-2.control-label(for='idNpc') Buscar por Nombre:
                         .col-lg-10    
-                            input.form-control(type='text' name='idItem' placeholder='Ingresa nombre')
+                            input.form-control(type='text' name='idNpc' placeholder='Ingresa nombre')
                     .form-group.col-lg-10.col-lg-offset-2
                         button.btn.btn-default(style='margin-right:5px') Cancelar
                         button.btn.btn-primary(type='submit') Buscar
         form.form-horizontal.centered(style='display:none')
             fieldset
-                legend Modificar datos:
+                legend Agregar nuevo Npc:
                 .form-group
-                    label.col-lg-2.control-label(for='idItem') Id: 
+                    label.col-lg-2.control-label(for='idNpc') Id: 
                     .col-lg-10
-                        input.form-control(type='text' name='idItem' disabled='' onkeypress='return numbersonly()')
+                        input.form-control(type='text', name='inputId' onkeypress='return numbersonly()' disabled='')
                 .form-group
-                    label.col-lg-2.control-label(for='nombreItem') Nombre:
+                    label.col-lg-2.control-label(for='nombreN') nombreN:
                     .col-lg-10
-                        input.form-control(type='text' name='nombreItem' placeholder='Nombre del Item' tabindex=2)    
+                        input.form-control(type='text', name='inputNombre' placeholder='Nombre del Npc')
                 .form-group
-                    label.col-lg-2.control-label(for='rarezaItem') Rareza:
+                    label.col-lg-2.control-label(for='vida') Vida: 
                     .col-lg-10
-                        input.form-control(type='text' name='rarezaItem' placeholder='Rareza' tabindex=3)    
+                        input.form-control(type='text', name='inputVida' placeholder='vida')
                 .form-group
-                    label.col-lg-2.control-label(for='sanacionItem') Sanacion:
+                    label.col-lg-2.control-label(for='danoN') Dano: 
                     .col-lg-10
-                        input.form-control(type='text' name='sanacionItem' placeholder='Sanacion' tabindex=4)    
+                        input.form-control(type='text', name='inputDanoN' placeholder='Ingresa el valor del dano')
                 .form-group
-                    label.col-lg-2.control-label(for='valorItem') Valor:
+                    label.col-lg-2.control-label(for='lvl', placeholder='Nivel') Nivel:
                     .col-lg-10
-                        input.form-control(type='text' name='valorItem' placeholder='Valor' tabindex=5)    
+                        input.form-control(type='text', name='inputlvl' placeholder='Ingresa el nivel')
                 .form-group
-                    label.col-lg-2.control-label(for='danoItem') Daño:
+                    label.col-lg-2.control-label(for='idMundo', placeholder='idMundo') IdMundo:
                     .col-lg-10
-                        input.form-control(type='text' name='danoItem' placeholder='Daño' tabindex=6)    
+                        input.form-control(type='text', name='inputidMundo' placeholder='Ingresa id del mundo')
                 .form-group
-                    label.col-lg-2.control-label(for='tipoItem') Tipo:
+                    label.col-lg-2.control-label(for='clase' placeholder='Clase del npc') Tipo:
                     .col-lg-10
-                        input.form-control(type='text' name='tipoItem' placeholder='#{tipo}' tabindex=7)    
+                        input.form-control(type='text', name='inputClase' placeholder='Ingresa la clase de npc')
                 .form-group
-                    label.col-lg-2.control-label(for='maxItem') Maximo:
+                    label.col-lg-2.control-label(for='idItem', placeholder='idItem') Maximo:
                     .col-lg-10
-                        input.form-control(type='text' name='maxItem' placeholder='#{max}' tabindex=8)    
+                        input.form-control(type='text', name='inputIdItem' placeholder='Ingresa el id de item')
                 .form-group
-                    label.col-lg-2.control-label(for='descItem') Descripcion:
+                    label.col-lg-2.control-label(for='dialogo', placeholder='Dialogo') Descripcion:
                     .col-lg-10
-                        input.form-control(type='text' name='descItem' placeholder='#{desc}' tabindex=9) 
+                        input.form-control(type='text', name='inputDialog' placeholder='Ingresa el dialogo')
                 .form-group.col-lg-10.col-lg-offset-4
                     button.btn.btn-default(style='margin-right:5px') Cancelar
                     button.btn.btn-primary(type="submit") Guardar
