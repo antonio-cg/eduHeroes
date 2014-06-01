@@ -1,12 +1,13 @@
 extends layout 
 block content 
-    h3  Administracion para crear objetos 
-    ul
-        li
-            a(href='/admin/item/nuevo') Nueva 
-        li
-            a(href='/admin/item/modificar') Modificar 
-        li 
-            a(href='/admin/item/borrar') Borrar 
-        li 
-            a(href='/admin/item/buscar') Buscar 
+    #content.col-lg-6.col-lg-offset-3.centered
+        form.form-horizontal
+            fieldset
+                legend Administración de Items
+                ul.nav
+                    li
+                        a(href='/admin/item/nuevo') Nuevo
+                    li
+                        a(href='/admin/item/modificar') Modificar 
+                    li 
+                        a(href='/admin/item/borrar') Borrar 

@@ -1,12 +1,13 @@
 extends layout 
 block content 
-    h3 Misiones
-    ul
-        li
-            a(href='/admin/mision/nuevo') Nueva 
-        li
-            a(href='/admin/mision/modificar') Modificar 
-        li 
-            a(href='/admin/mision/borrar') Borrar 
-        li 
-            a(href='/admin/mision/buscar') Buscar 
+    #content.col-lg-6.col-lg-offset-3.centered
+        form.form-horizontal
+            fieldset
+                legend Administración de Misiones
+                ul.nav
+                    li
+                        a(href='/admin/mision/nuevo') Nueva 
+                    li
+                        a(href='/admin/mision/modificar') Modificar 
+                    li 
+                        a(href='/admin/mision/borrar') Borrar 
